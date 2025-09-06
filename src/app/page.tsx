@@ -9,49 +9,58 @@ import { Cta } from "@/components/Cta";
 
 import { benefitOne, benefitTwo } from "@/components/data";
 export default function Home() {
-  return (
-    <Container>
-      <Hero />
-      <SectionTitle
-        preTitle="Nextly Benefits"
-        title=" Why should you use this landing page"
-      >
-        Nextly is a free landing page & marketing website template for startups
-        and indie projects. Its built with Next.js & TailwindCSS. And its
-        completely open-source.
-      </SectionTitle>
+    return (
+        <Container>
+            <Hero />
 
-      <Benefits data={benefitOne} />
-      <Benefits imgPos="right" data={benefitTwo} />
+            <SectionTitle
+                preTitle="Our Value Proposition"
+                title="Why Partner with NextWorks"
+            >
+                With over a decade of experience, NextWorks delivers innovative
+                technology solutions that drive operational efficiency, reduce
+                costs, and maximize ROI for organizations across diverse
+                industries in Africa.
+            </SectionTitle>
 
-      <SectionTitle
-        preTitle="Watch a video"
-        title="Learn how to fullfil your needs"
-      >
-        This section is to highlight a promo or demo video of your product.
-        Analysts says a landing page with video has 3% more conversion rate. So,
-        don&apos;t forget to add one. Just like this.
-      </SectionTitle>
+            <Benefits data={benefitOne} />
+            <Benefits imgPos="right" data={benefitTwo} />
 
-      <Video videoId="fZ0D0cnR88E" />
+            <SectionTitle
+                preTitle="Technology Showcase"
+                title="See Our Solutions in Action"
+            >
+                Discover how NextWorks&apos; cutting-edge ICT infrastructure,
+                security systems, and collaboration solutions transform business
+                operations and create tangible value for our clients across
+                various sectors.
+            </SectionTitle>
 
-      <SectionTitle
-        preTitle="Testimonials"
-        title="Here's what our customers said"
-      >
-        Testimonials is a great way to increase the brand trust and awareness.
-        Use this section to highlight your popular customers.
-      </SectionTitle>
+            {/* <Video videoId="fZ0D0cnR88E" /> */}
 
-      <Testimonials />
+            <SectionTitle
+                preTitle="Client Success Stories"
+                title="Trusted by Leading Organizations"
+            >
+                NextWorks takes pride in serving prestigious clients including
+                British Airways, Lufthansa, Reckitt Benckiser, and leading
+                educational institutions across Nigeria, building long-term
+                partnerships based on exceptional service delivery.
+            </SectionTitle>
 
-      <SectionTitle preTitle="FAQ" title="Frequently Asked Questions">
-        Answer your customers possible questions here, it will increase the
-        conversion rate as well as support or chat requests.
-      </SectionTitle>
+            <Testimonials />
 
-      <Faq />
-      <Cta />
-    </Container>
-  );
+            <SectionTitle
+                preTitle="Expert Insights"
+                title="Frequently Asked Questions"
+            >
+                Find answers to common questions about our ICT solutions,
+                implementation process, and support services. Our team is ready
+                to address your specific technology challenges.
+            </SectionTitle>
+
+            <Faq />
+            <Cta />
+        </Container>
+    );
 }

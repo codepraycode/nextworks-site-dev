@@ -1,57 +1,56 @@
 import {
-  FaceSmileIcon,
-  ChartBarSquareIcon,
-  CursorArrowRaysIcon,
-  DevicePhoneMobileIcon,
-  AdjustmentsHorizontalIcon,
-  SunIcon,
+  ChartBarIcon,
+  ShieldCheckIcon,
+  CogIcon,
+  ServerIcon,
+  UserGroupIcon,
 } from "@heroicons/react/24/solid";
 
 import benefitOneImg from "../../public/img/benefit-one.png";
 import benefitTwoImg from "../../public/img/benefit-two.png";
 
 const benefitOne = {
-  title: "Highlight your benefits",
-  desc: "You can use this space to highlight your first benefit or a feature of your product. It can also contain an image or Illustration like in the example along with some bullet points.",
+  title: "Operational Efficiency Solutions",
+  desc: "NextWorks helps organizations minimize risks and mitigate high costs through technology solutions that optimize operations and reduce overhead.",
   image: benefitOneImg,
   bullets: [
     {
-      title: "Understand your customers",
-      desc: "Then explain the first point breifly in one or two lines.",
-      icon: <FaceSmileIcon />,
+      title: "Cost Reduction",
+      desc: "Implement solutions that reduce operational expenses and improve ROI",
+      icon: <ChartBarIcon />,
     },
     {
-      title: "Improve acquisition",
-      desc: "Here you can add the next benefit point.",
-      icon: <ChartBarSquareIcon />,
+      title: "Risk Mitigation",
+      desc: "Advanced security and surveillance systems to protect your assets",
+      icon: <ShieldCheckIcon />,
     },
     {
-      title: "Drive customer retention",
-      desc: "This will be your last bullet point in this section.",
-      icon: <CursorArrowRaysIcon />,
+      title: "Future-Proof Technology",
+      desc: "Durable, scalable solutions that grow with your business needs",
+      icon: <CogIcon />,
     },
   ],
 };
 
 const benefitTwo = {
-  title: "Offer more benefits here",
-  desc: "You can use this same layout with a flip image to highlight your rest of the benefits of your product. It can also contain an image or Illustration as above section along with some bullet points.",
+  title: "Industry-Specific Expertise",
+  desc: "With experience across aviation, healthcare, education, and manufacturing, we understand the unique technology challenges of different sectors.",
   image: benefitTwoImg,
   bullets: [
     {
-      title: "Mobile Responsive Template",
-      desc: "Nextly is designed as a mobile first responsive template.",
-      icon: <DevicePhoneMobileIcon />,
+      title: "Aviation Sector Solutions",
+      desc: "Specialized IT infrastructure for airlines and aviation services",
+      icon: <ServerIcon />,
     },
     {
-      title: "Powered by Next.js & TailwindCSS",
-      desc: "This template is powered by latest technologies and tools.",
-      icon: <AdjustmentsHorizontalIcon />,
+      title: "Healthcare Technology",
+      desc: "Secure systems for healthcare institutions and medical facilities",
+      icon: <ShieldCheckIcon />,
     },
     {
-      title: "Dark & Light Mode",
-      desc: "Nextly comes with a zero-config light & dark mode. ",
-      icon: <SunIcon />,
+      title: "Educational Infrastructure",
+      desc: "Campus-wide networking and collaboration tools for educational institutions",
+      icon: <UserGroupIcon />,
     },
   ],
 };

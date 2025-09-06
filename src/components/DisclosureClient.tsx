@@ -81,24 +81,22 @@ export function DisclosureClient(props: Readonly<DisclosureClientProps>) {
           </DisclosureButton>
 
           <DisclosurePanel className="flex flex-wrap w-full my-5 lg:hidden">
-            <>
-              {navigation.map((item, index) => (
-                <Link
-                  key={index}
-                  href={item.href}
-                  className="w-full px-4 py-2 -ml-4 text-gray-500 rounded-md dark:text-gray-300 hover:text-indigo-500 focus:text-indigo-500 focus:bg-indigo-100 dark:focus:bg-gray-800 focus:outline-none"
-                >
-                  {item.text}
-                </Link>
-              ))}
+            {navigation.map((item, index) => (
               <Link
-                href={cta.href}
-                target={cta.external ? "_blank" : "_self"}
-                className="w-full px-6 py-2 mt-3 text-center text-white bg-indigo-600 rounded-md lg:ml-5"
+                key={index}
+                href={item.href}
+                className="w-full px-4 py-2 -ml-4 text-gray-500 rounded-md dark:text-gray-300 hover:text-indigo-500 focus:text-indigo-500 focus:bg-indigo-100 dark:focus:bg-gray-800 focus:outline-none"
               >
-                {cta.text}
+                {item.text}
               </Link>
-            </>
+            ))}
+            <Link
+              href={cta.href}
+              target={cta.external ? "_blank" : "_self"}
+              className="w-full px-6 py-2 mt-3 text-center text-white bg-indigo-600 rounded-md lg:ml-5"
+            >
+              {cta.text}
+            </Link>
           </DisclosurePanel>
         </div>
       )}
