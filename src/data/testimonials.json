@@ -1,0 +1,32 @@
+{
+    "testimonials": [
+        {
+            "id": 1,
+            "content": "NextWorks transformed our operations with their <Mark>AI-powered automation systems</Mark>. Their smart office solutions reduced our energy costs by 40% while improving employee productivity.",
+            "name": "Sarah Johnson",
+            "title": "CTO, Healthcare International",
+            "image": "/img/user1.jpg"
+        },
+        {
+            "id": 2,
+            "content": "The <Mark>custom software development</Mark> and smart home integration provided by NextWorks has revolutionized how we manage our facilities. The AI integration is particularly impressive.",
+            "name": "James Adeyemi",
+            "title": "Facility Manager, Premium Real Estate Group",
+            "image": "/img/user2.jpg"
+        },
+        {
+            "id": 3,
+            "content": "As a participant in their <Mark>tech education program</Mark>, I gained hands-on experience in AI and robotics that directly led to my current role. NextWorks is truly building the next generation of tech talent.",
+            "name": "Chinedu Okoro",
+            "title": "AI Engineer & NextWorks Alumni",
+            "image": "/img/user3.jpg"
+        },
+        {
+            "id": 4,
+            "content": "Their <Mark>ICT infrastructure and security solutions</Mark> provide the perfect foundation for our digital transformation. The seamless integration with our existing systems was remarkable.",
+            "name": "Fatima Aliyu",
+            "title": "IT Director, Galaxy Backbone",
+            "image": "/img/user4.jpg"
+        }
+    ]
+}

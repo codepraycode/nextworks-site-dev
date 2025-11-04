@@ -7,60 +7,100 @@ import { Testimonials } from "@/components/Testimonials";
 import { Faq } from "@/components/Faq";
 import { Cta } from "@/components/Cta";
 
-import { benefitOne, benefitTwo } from "@/components/data";
+import { benefitOne, benefitTwo, benefitThree } from "@/data/benefits";
+
 export default function Home() {
     return (
-        <Container>
-            <Hero />
+        <div className="space-y-20 lg:space-y-32">
+            <section id="home">
+                <Hero />
+            </section>
 
-            <SectionTitle
-                preTitle="Our Value Proposition"
-                title="Why Partner with NextWorks"
-            >
-                With over a decade of experience, NextWorks delivers innovative
-                technology solutions that drive operational efficiency, reduce
-                costs, and maximize ROI for organizations across diverse
-                industries in Africa.
-            </SectionTitle>
+            <section id="about" className="scroll-mt-20">
+                <Container>
+                    <SectionTitle
+                        preTitle="Next-Generation Technology Solutions"
+                        title="Transforming Businesses with Intelligent Technology"
+                    >
+                        NextWorks is a premier technology partner delivering
+                        cutting-edge software development, AI integration, smart
+                        automation, and ICT infrastructure solutions. We empower
+                        organizations to thrive in the digital age while
+                        nurturing the next generation of tech talent through our
+                        educational initiatives.
+                    </SectionTitle>
+                </Container>
+            </section>
 
-            <Benefits data={benefitOne} />
-            <Benefits imgPos="right" data={benefitTwo} />
+            <section id="ai-solutions" className="scroll-mt-20">
+                <Benefits data={benefitOne} />
+            </section>
 
-            <SectionTitle
-                preTitle="Technology Showcase"
-                title="See Our Solutions in Action"
-            >
-                Discover how NextWorks&apos; cutting-edge ICT infrastructure,
-                security systems, and collaboration solutions transform business
-                operations and create tangible value for our clients across
-                various sectors.
-            </SectionTitle>
+            <section id="software-development" className="scroll-mt-20">
+                <Benefits imgPos="right" data={benefitTwo} />
+            </section>
 
-            {/* <Video videoId="fZ0D0cnR88E" /> */}
+            <section id="education" className="scroll-mt-20">
+                <Benefits data={benefitThree} />
+            </section>
 
-            <SectionTitle
-                preTitle="Client Success Stories"
-                title="Trusted by Leading Organizations"
-            >
-                NextWorks takes pride in serving prestigious clients including
-                British Airways, Lufthansa, Reckitt Benckiser, and leading
-                educational institutions across Nigeria, building long-term
-                partnerships based on exceptional service delivery.
-            </SectionTitle>
+            <section id="showcase" className="scroll-mt-20">
+                <Container>
+                    <SectionTitle
+                        preTitle="Innovation in Action"
+                        title="See Our Smart Solutions"
+                    >
+                        Experience how NextWorks transforms ordinary spaces into
+                        intelligent environments. From AI-powered offices to
+                        automated smart homes, discover how our innovative
+                        solutions create seamless, efficient, and secure digital
+                        experiences.
+                    </SectionTitle>
+                </Container>
 
-            <Testimonials />
+                {/* <Video videoId="fZ0D0cnR88E" /> */}
+            </section>
 
-            <SectionTitle
-                preTitle="Expert Insights"
-                title="Frequently Asked Questions"
-            >
-                Find answers to common questions about our ICT solutions,
-                implementation process, and support services. Our team is ready
-                to address your specific technology challenges.
-            </SectionTitle>
+            <section id="testimonials" className="scroll-mt-20">
+                <Container>
+                    <SectionTitle
+                        preTitle="Success Stories"
+                        title="Trusted by Industry Leaders & Future Innovators"
+                    >
+                        From global enterprises to educational institutions and
+                        aspiring tech professionals, NextWorks builds lasting
+                        partnerships through exceptional service delivery and
+                        transformative technology solutions that drive real
+                        results.
+                    </SectionTitle>
+                </Container>
 
-            <Faq />
-            <Cta />
-        </Container>
+                <div className="mt-16">
+                    <Testimonials />
+                </div>
+            </section>
+
+            <section id="faq" className="scroll-mt-20">
+                <Container>
+                    <SectionTitle
+                        preTitle="Get Answers"
+                        title="Frequently Asked Questions"
+                    >
+                        Learn more about our comprehensive technology services,
+                        implementation process, and educational programs. Our
+                        team is ready to help you navigate your digital
+                        transformation journey.
+                    </SectionTitle>
+                </Container>
+
+                <div className="mt-16">
+                    <Faq />
+                </div>
+            </section>
+
+            <section id="contact" className="scroll-mt-20">
+                <Cta />
+            </section>
+        </div>
     );
 }

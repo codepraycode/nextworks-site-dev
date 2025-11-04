@@ -4,3 +4,14 @@ export interface PageProps {
   };
   searchParams: {};
 }
+
+export interface BenefitProps {
+    title: string;
+    desc: string;
+    image: string;
+    bullets: {
+        title: string;
+        desc: string;
+        icon: JSX.Element;
+    }[];
+}

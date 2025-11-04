@@ -39,7 +39,7 @@ export function Footer() {
     return (
         <div className="relative bg-gray-50 dark:bg-gray-900">
             <Container>
-                <div className="grid max-w-screen-xl grid-cols-1 gap-10 pt-10 mx-auto mt-5 border-t border-gray-200 dark:border-gray-800 lg:grid-cols-5">
+                <div className="grid  grid-cols-1 gap-10 pt-10 mx-auto mt-5 border-t border-gray-200 dark:border-gray-800 lg:grid-cols-5">
                     {/* Company Info */}
                     <div className="lg:col-span-2">
                         <div>

@@ -16,6 +16,11 @@ const config: Config = {
       colors: {
         trueGray: colors.neutral,
       },
+      spacing: {
+        '18': '4.5rem',
+        '88': '22rem',
+        '128': '32rem',
+      }
     },
     fontFamily: {
       sans: ["Inter", ...defaultTheme.fontFamily.sans],
