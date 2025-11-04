@@ -12,9 +12,9 @@ import {
 } from "@heroicons/react/24/outline";
 import { Cog8ToothIcon } from "@heroicons/react/24/solid";
 
-const benefitOneImg = "/img/benefit-one.png";
+const benefitOneImg = "/illustrations/benefit-one.svg";
 const benefitTwoImg = "/img/benefit-two.png";
-const benefitThreeImg = "/img/benefit-three.png";
+const benefitThreeImg = "/img/benefit-one.png";
 
 
 
