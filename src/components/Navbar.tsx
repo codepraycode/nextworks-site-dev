@@ -1,6 +1,6 @@
 "use client";
 import Link from "next/link";
-import ThemeChanger from "./DarkSwitch";
+// import ThemeChanger from "./DarkSwitch";
 import Image from "next/image";
 import { Disclosure } from "@headlessui/react";
 import { Fragment, useId, useState, useEffect } from "react";
@@ -85,12 +85,12 @@ export const Navbar = () => {
 
                     {/* Desktop CTA Buttons */}
                     <div className="flex items-center gap-3 ml-6">
-                        <ThemeChanger />
+                        {/* <ThemeChanger /> */}
                         <button
                             onClick={() => scrollToSection("#contact")}
                             className="px-6 py-2.5 text-sm font-semibold text-white bg-gradient-to-r from-blue-600 to-purple-600 rounded-lg hover:from-blue-700 hover:to-purple-700 transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl"
                         >
-                            Get Started
+                            Contact Us
                         </button>
                     </div>
                 </div>
@@ -100,7 +100,7 @@ export const Navbar = () => {
                     {({ open }) => (
                         <Fragment key={key}>
                             <div className="flex items-center gap-3 lg:hidden">
-                                <ThemeChanger />
+                                {/* <ThemeChanger /> */}
                                 <Disclosure.Button
                                     aria-label="Toggle Menu"
                                     className="p-2 text-gray-500 rounded-md hover:text-blue-600 focus:text-blue-600 focus:bg-blue-100 focus:outline-none darkk:text-gray-300 darkk:focus:bg-gray-800"
@@ -152,7 +152,7 @@ export const Navbar = () => {
                                             }
                                             className="w-full px-4 py-3 text-base font-semibold text-center text-white bg-gradient-to-r from-blue-600 to-purple-600 rounded-lg hover:from-blue-700 hover:to-purple-700 transition-all duration-300 transform hover:scale-105"
                                         >
-                                            Get Started
+                                            Contact Us
                                         </Disclosure.Button>
                                     </div>
                                 </div>
