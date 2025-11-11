@@ -202,7 +202,7 @@ export default function Home() {
                     </div>
 
                     {/* Video Placeholder with Enhanced Design */}
-                    <div className="mt-16 bg-gradient-to-r from-blue-600 to-purple-600 rounded-2xl p-1 shadow-2xl">
+                    {/* <div className="mt-16 bg-gradient-to-r from-blue-600 to-purple-600 rounded-2xl p-1 shadow-2xl">
                         <div className="bg-white darkk:bg-gray-800 rounded-xl p-8 text-center">
                             <div className="max-w-4xl mx-auto">
                                 <div className="w-20 h-20 mx-auto mb-6 bg-gradient-to-r from-blue-100 to-purple-100 darkk:from-blue-900 darkk:to-purple-900 rounded-full flex items-center justify-center">
@@ -253,7 +253,7 @@ export default function Home() {
                                 </button>
                             </div>
                         </div>
-                    </div>
+                    </div> */}
                 </Container>
             </section>
 

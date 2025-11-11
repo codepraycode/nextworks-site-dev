@@ -1,7 +1,7 @@
 "use client";
 import Link from "next/link";
 import Image from "next/image";
-import { Disclosure } from "@headlessui/react";
+import { Disclosure, DisclosureButton, DisclosurePanel } from "@headlessui/react";
 import { Fragment, useId, useState, useEffect, useMemo } from "react";
 
 export const Navbar = () => {
@@ -166,7 +166,7 @@ export const Navbar = () => {
                     {({ open }) => (
                         <Fragment key={key}>
                             <div className="flex items-center gap-3 lg:hidden">
-                                <Disclosure.Button
+                                <DisclosureButton
                                     aria-label="Toggle Menu"
                                     className="p-2 text-gray-500 rounded-md hover:text-blue-600 focus:text-blue-600 focus:bg-blue-100 focus:outline-none darkk:text-gray-300 darkk:focus:bg-gray-800 transition-colors duration-300"
                                 >
@@ -189,14 +189,14 @@ export const Navbar = () => {
                                             />
                                         )}
                                     </svg>
-                                </Disclosure.Button>
+                                </DisclosureButton>
                             </div>
 
                             {/* Mobile Menu Panel */}
-                            <Disclosure.Panel className="flex flex-col w-full mt-4 lg:hidden">
+                            <DisclosurePanel className="flex flex-col w-full mt-4 lg:hidden">
                                 <div className="px-2 pt-2 pb-3 space-y-1 bg-white border border-gray-200 rounded-lg shadow-xl darkk:bg-gray-800 darkk:border-gray-700">
                                     {navigation.map((item, index) => (
-                                        <Disclosure.Button
+                                        <DisclosureButton
                                             key={index}
                                             as="button"
                                             onClick={() =>
@@ -217,12 +217,12 @@ export const Navbar = () => {
                                                     <div className="w-2 h-2 bg-blue-600 darkk:bg-blue-400 rounded-full animate-pulse"></div>
                                                 )}
                                             </div>
-                                        </Disclosure.Button>
+                                        </DisclosureButton>
                                     ))}
 
                                     {/* Mobile CTA Button */}
                                     <div className="px-4 py-3 border-t border-gray-200 darkk:border-gray-700">
-                                        <Disclosure.Button
+                                        <DisclosureButton
                                             as="button"
                                             onClick={() =>
                                                 scrollToSection(
@@ -237,10 +237,10 @@ export const Navbar = () => {
                                             }`}
                                         >
                                             Contact Us
-                                        </Disclosure.Button>
+                                        </DisclosureButton>
                                     </div>
                                 </div>
-                            </Disclosure.Panel>
+                            </DisclosurePanel>
                         </Fragment>
                     )}
                 </Disclosure>

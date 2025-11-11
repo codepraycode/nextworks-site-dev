@@ -37,7 +37,7 @@ export const Cta = () => {
 
                         {/* Description */}
                         <p className="text-xl lg:text-2xl text-gray-600 leading-relaxed max-w-2xl">
-                            Join 200+ forward-thinking organizations that trust
+                            Join other forward-thinking organizations that trust
                             NextWorks to transform their technology landscape
                             while developing the next generation of tech talent.
                         </p>
@@ -122,7 +122,7 @@ export const Cta = () => {
                         </a>
 
                         {/* Secondary CTA */}
-                        <a
+                        {/* <a
                             href="/education"
                             className="group relative bg-white border-2 border-gray-300 text-gray-800 font-bold text-lg px-8 py-4 lg:px-10 lg:py-5 rounded-xl hover:border-blue-500 hover:text-blue-600 hover:shadow-xl transition-all duration-500 transform hover:scale-105 hover:-translate-y-1 min-w-[200px] text-center"
                         >
@@ -142,12 +142,12 @@ export const Cta = () => {
                                     />
                                 </svg>
                             </div>
-                        </a>
+                        </a> */}
 
                         {/* Trust text */}
                         <div className="text-center lg:text-left pt-4 lg:pt-6">
                             <p className="text-gray-500 text-sm font-medium">
-                                ⭐️ Trusted by 200+ organizations across Africa
+                                ⭐️ Trusted by organizations across Africa
                             </p>
                         </div>
                     </div>
