@@ -1,5 +1,4 @@
 import type { Metadata } from "next";
-// import { Inter } from "next/font/google";
 import { ThemeProvider } from "next-themes";
 // @ts-ignore: Allow importing global CSS without type declarations
 import "./globals.css";
